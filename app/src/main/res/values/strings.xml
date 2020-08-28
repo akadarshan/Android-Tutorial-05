@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Tutorial 05</string>
+    <string name="strRegistration">Registration</string>
+    <string name="strFname">First Name</string>
+    <string name="strLname">Last Name</string>
+    <string name="strEmail">Email</string>
+    <string name="strPassword">Password</string>
+    <string name="strbranch">Branch CE/IT</string>
+    <string name="strMale">Male</string>
+    <string name="strFemale">Female</string>
+    <string name="strCity">City</string>
+    <string name="strStatus">Profile Status Active/Inactive</string>
+    <string name="strRegister">Register Me</string>
 </resources>
