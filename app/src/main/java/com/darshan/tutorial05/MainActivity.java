@@ -12,6 +12,7 @@ import android.widget.AutoCompleteTextView;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Toast;
 
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.switchmaterial.SwitchMaterial;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
     AutoCompleteTextView dropDownList;
     int idSelected;
 
-    String[] itemDropDown = {"Ahmedabad", "Baroda", "Bhavnagar", "Gondal", "Junagadh", "Kutch", "Rajkot", "Surat"};
+    String[] itemDropDown = {"Select City","Ahmedabad", "Baroda", "Bhavnagar", "Gondal", "Junagadh", "Kutch", "Rajkot", "Surat"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,12 +71,15 @@ public class MainActivity extends AppCompatActivity {
                     tl_email.setError("Please Enter Valid Email!");
                 }else if (tv_password.getText().toString().equals("")){
                     tl_password.setError("Password should not be empty");
+                }else if (dropDownList.getText().toString().equals("Select City")){
+                    textInputLayout.setError("Please Select City");
                 }else{
                     tl_fName.setErrorEnabled(false);
                     tl_lName.setErrorEnabled(false);
                     tl_email.setErrorEnabled(false);
                     tl_email.setErrorEnabled(false);
                     tl_password.setErrorEnabled(false);
+                    textInputLayout.setErrorEnabled(false);
                     idSelected=gender.getCheckedRadioButtonId();
                     rb_Checked=findViewById(idSelected);
                     intent.putExtra("FirstName",tv_fName.getText().toString());

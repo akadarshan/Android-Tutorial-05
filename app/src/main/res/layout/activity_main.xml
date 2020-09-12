@@ -197,7 +197,7 @@
                             android:layout_height="wrap_content"
                             android:dropDownHeight="300dp"
                             android:hint="@string/strCity"
-                            android:text="Bhavnagar"
+                            android:text="Select City"
                             android:inputType="none"
                             android:textColor="@color/colorPrimaryText" />
                     </com.google.android.material.textfield.TextInputLayout>
